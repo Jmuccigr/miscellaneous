@@ -16,6 +16,11 @@ suppress-bibliography: true
 
 ## People
 
+### Robert C. Dickeson
+#### [@Kiley2012-1]
+- The price of program bloat for all is impoverishment for each.
+
+
 ### Peter Drucker
 
 #### [-@Drucker1999] 
