@@ -13,6 +13,7 @@ suppress-bibliography: true
 - These aren’t the droids you are looking for - Obi Wan Kenobi, *Star Wars* (1977)
 - You keep using that word. I do not think it means what you think it means - Iñigo Montoya, *The Princess Bride* (1987)
 - You can't handle the truth! - Col. Jessep, *A Few Good Men* (1992)
+- You sit on a throne of lies. - Buddy the Elf, *Elf* (2003)
 
 ## People
 
