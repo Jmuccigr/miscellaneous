@@ -44,6 +44,7 @@ A collection of useful instructions.
 	- attibution: `Powered by <a href="http://leafletjs.com/">Leaflet</a> and <a href="https://www.mapbox.com/">Mapbox</a>. Map base by <a title="Ancient World Mapping Center (UNC-CH)" href="http://awmc.unc.edu">AWMC</a>, 2014 (cc-by-nc).`
 	- URL: `https://api.tiles.mapbox.com/v4/isawnyu.map-knmctlkh/{z}/{x}/{y}.png?access_token=` + token
 	- maxZoom: `12`
+	- base map id: isawnyu.map-knmctlkh
 	- info: <http://awmc.unc.edu/wordpress/tiles/map-tile-information>
 
 - OpenStreetMap
