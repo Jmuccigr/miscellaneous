@@ -1,7 +1,7 @@
 ---
 author: John D. Muccigrosso
 title: The CLI, Zotero, and Pandoc
-date: Thursday, 25 February 2016
+date: Saturday, 14 January 2017
 css: /Users/john_muccigrosso/Documents/github/local/css/clean_notes.css
 ...
 

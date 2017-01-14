@@ -1,11 +1,11 @@
 ---
 author: John D. Muccigrosso
 title: The Command-Line Interface (CLI)
-date: Monday, 8 February 2016
+date: Saturday, 14 January 2017
 css: /Users/john_muccigrosso/Documents/github/local/css/clean_notes.css
 ...
 
-# Using the CLI
+# Using the Command Line Interface at Drew
 
 ## Getting there
 
@@ -18,7 +18,7 @@ css: /Users/john_muccigrosso/Documents/github/local/css/clean_notes.css
 
 ## Intro to the CLI
 
-1. The **command-line interface** is another way (pre-1984 Apple Macintosh) to access your computer (or a remote one, in this case)
+1. The **command-line interface** is another way (pre-1984 Apple Macintosh) to access your computer (or a remote one, in this case). It's also called the **terminal** after the machines (called "terminals") that were used to access big mainframe computers back in the 20th century.
 1. You must type in commands to do things, including running programs or looking at files and folders.
 1. There's no `undo`, so be careful!
 

@@ -1,5 +1,7 @@
 ---
-title: Using Markdown
+title: Intro to Markdown
+author: John D. Muccigrosso
+date: Monday, 8 February 2016
 ...
 
 # Markdown
