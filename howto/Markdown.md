@@ -26,7 +26,7 @@ this is invisible to viewers
 
 -----
 
-What he says:
+What he [says](http://www.chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295):
 
 - almost anything you need to do, you can do in a plain text file
 
