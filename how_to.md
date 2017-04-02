@@ -56,6 +56,9 @@ A collection of useful instructions.
 	- maxZoom: 20 for `toner`
 	- note: Import script `src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"`, then `new L.StamenTileLayer("ID")`
 	- info: <http://maps.stamen.com/>
+- Google
+	- <https://gitlab.com/IvanSanchez/Leaflet.GridLayer.GoogleMutant#README>
+
 
 ## pandoc
 
@@ -65,6 +68,34 @@ A collection of useful instructions.
 
 - npm
     - pandoc-mermaid-filter
+
+### Jekyll pages
+
+- Local set up through gem
+- Info
+	- [Jekyll docs](https://jekyllrb.com/docs)
+	- [GitHub tutorial](http://jmcglone.com/guides/github-pages/) (watch out for layouts)
+	- [GitHub info pages](https://help.github.com/categories/github-pages-basics/)
+- If there are layout templates, makes sure that they include the necessary header material (e.g., css) for the them.
+- CLI
+	- launch by going to directory and: `bundle exec jekyll start [--detach]`
+- Themes
+	- Add to Gemfile in site dir: `gem "<themename>"`
+
+## MAMP, Apache, & php
+
+- [Use files without php extension](http://wettone.com/code/clean-urls) (= clean URIs) via Apache's `mod_rewrite`
+	1. Add regex rewrite rules according to link above.
+	1. Make sure that in /Applications/MAMP/conf/apache/httpd.conf, find:
+	
+		```
+		<Directory />
+		    Options Indexes FollowSymLinks
+		    AllowOverride ~None~ All
+		</Directory>
+		```
+- Change log to usual place, which will show up in console.app
+	- `ErrorLog "/Users/john_muccigrosso/Library/Logs/apache_error.log"`
 
 ## Other
 

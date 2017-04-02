@@ -1,11 +1,18 @@
 ---
+title: Using the Command Line Interface at Drew
 author: John D. Muccigrosso
-title: The Command-Line Interface (CLI)
-date: Saturday, 14 January 2017
-css: /Users/john_muccigrosso/Documents/github/local/css/clean_notes.css
+date: Spring 2017
+css: ../../css/clean_notes.css
 ...
 
-# Using the Command Line Interface
+## Getting there
+
+1. Log into <http://www.cloudpc.drew.edu/>.
+1. Load *Putty* as one of your applications, if it isn't there already.
+1. Run *Putty*. (You may have to install the Citrix cloud viewer your first time.)
+1. In the "Host Name" window, type `pandoc2.cs.drew.lan`.
+1. For convenience, type a name into the "Saved Sessions" field and click the "Save" button to have it remember the server name. (You can also go in and change various settings for your session. Most won't make sense, but under "Window", "Window/Appearance", and "Window/Colours" are some options you can play with.)
+1. Click the "Open" button or double-click the session name you saved to log in using your usual Drew username and password.
 
 ## Intro to the CLI
 
@@ -37,7 +44,7 @@ css: /Users/john_muccigrosso/Documents/github/local/css/clean_notes.css
 
 1. Let's make a new file in "practice". There are lots of ways to do this, but the command `touch` will update the modification date on any file, creating it if it doesn't yet exist, so try `touch temp.txt`.
 1. Copy it via `cp temp.txt newtemp.txt` and rename it via `mv newtemp.txt test.txt` (`mv` is for "move"). Notice how the first name is the existing file and the second is the new one. That happens a lot.
-1. Now remove it completely with `rm newtemp.txt `. NB No undo!
+1. Now remove it completely with `rm test.txt `. NB No undo!
 1. There are several ways to edit files within the CLI. Easiest perhaps is with the command `nano <filename>`. This will open the file `<filename>` in a simple text editor. You can move around with the arrow keys and when you're done, use the commands at the bottom. Control-X will exit and if you've made changes, it will ask if you want to save them and then with what name.
 1. To look at your files, you also have several options:
 	- `cat` (for "catalogue") will scroll the entire file across the window without stopping.

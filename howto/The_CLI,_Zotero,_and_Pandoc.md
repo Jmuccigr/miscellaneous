@@ -1,44 +1,9 @@
 ---
 author: John D. Muccigrosso
 title: The CLI, Zotero, and Pandoc
-date: Saturday, 14 January 2017
+date: Tuesday, 7 February 2017
 css: /Users/john_muccigrosso/Documents/github/local/css/clean_notes.css
 ...
-
-# The CLI, Zotero, and Pandoc
-
-Pandoc can not only convert between various file types, it can also read citations from a bibliography file and convert them to the format you choose. (Technically it's not pandoc that does this, but a "filter" called *pandoc-citeproc*.) Pandoc can also create footnotes. Here's how to do both.
-
-## Footnotes
-
-There's a nice section on footnotes in the [pandoc User's Guide](http://pandoc.org/README.html#footnotes). The simplest thing to do is to frame the note identifier with square brackets and then follow up somewhere later in the text with the note itself, preceded by the identifier. Note the required carat `^` before the identifier text. So, to borrow the guide's example:
-
-```
-Here is a footnote reference,[^1] and another.[^longnote]  
-  
-[^1]: Here is the footnote.  
-  
-[^longnote]: Here's one with multiple blocks.  
-  
-    Subsequent paragraphs are indented to show that they
-belong to the previous footnote.
-```
-
-pandoc will number the footnotes in order, so you can use any text you want as the note identifiers (here, `1` and `longnote`). This makes it easy to label the note with something sensible that makes it easy to remember what it refers to.
-
-A second way is to use an in-line note which has no identifier. Again, from the Guide:
-
-```
-Here is an inline note.^[Inlines notes are easier 
-to write, since you don't have to pick an identifier 
-and move down to type the note.]
-```
-
-You can use both methods in the same document, so pick whichever you prefer.
-
-- Assignment: Add a few footnotes to your existing markdown document and make sure pandoc handles them as you expect.
-
-Now for citations...
 
 ## Setting up citations
 
@@ -163,7 +128,7 @@ When you open a new session, you're actually running an environment called a *sh
 
 1. Create a new session on the server and make sure you're in your home directory by changing the directory to it. Just like `.` is always the current directory and `..` is always the directory containing the current directory, your home directory has its own special name: `~`. So to get there, `cd ~`. (This will work from any directory in the system.)
 1. Once in your home directory, list **all** the files to make sure you have *.bashrc*. If you don't have one, create it with `touch`.
-1. Open the .bashrc file for editing with `pico`.
+1. Open the .bashrc file for editing with `nano`.
 1. If the file was already there, it's likely that the system administrator has put some commands into it already. Have a look through it. You may notice that some lines look like commands and others look like they might be some programming. (They are.) These types of shell files consist of a series of commands to be executed by the system.  
     People will often include comments in these files by starting a line with `#`, which tells the system not to process the line. This is also an easy way to prevent a line with a command from being executing, since prefixing it with `#` makes the system think it's just a comment and it gets ignored. This is called "commenting out" a line. (If you like, try entering a command you know with a leading `#` and see what happens.)
 1. Look for an `alias` command in the .bashrc file and see whether it's been commented out or not. Uncomment any commands that look useful and save the file. From now on every **new** shell you create will use your new aliases. To avoid the hassle of exiting your current session and re-opening a new one, simply enter `source ~/.bashrc` and the system will load the .bashrc file in your home directory, making your new aliases active.
@@ -172,7 +137,7 @@ When you open a new session, you're actually running an environment called a *sh
 
 Let's make our own alias to help with our use of pandoc:
 
-1. Open .bashrc for editing via `pico`. (Remember that it's in your home directory.)
+1. Open .bashrc for editing via `nano`. (Remember that it's in your home directory.)
 1. Go to the end of the file and add the following:  
    `alias pandoc='pandoc --bibiliography=/your/bibliography/file.json'`
 1. Close and save the file.
