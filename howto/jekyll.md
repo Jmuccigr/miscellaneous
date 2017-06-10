@@ -1,6 +1,6 @@
 ---
 title: Jekyll pages
-date: 25 May 2017
+date: 9 June 2017
 ---
 
 ## Using Jekyll locally
@@ -17,6 +17,9 @@ date: 25 May 2017
 	- Check for [github.io-available gem-installed themes](https://pages.github.com/themes/)
     	- Add to file "Gemfile" in site dir: `gem "<themename>"`
     	- `bundle install` to install it
+	- RTFM! For example, css can often be included in a file in `/assets`.
+- Custom 404
+    - <https://hendrixjoseph.github.io/the_elusive_custom_github_404_page/>
 - Tips
     - Make sure all .md files have a YAML header or jekyll won't generate html from them.
     - [gems supported by github](https://pages.github.com/versions/)
