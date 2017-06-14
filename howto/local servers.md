@@ -24,6 +24,7 @@ date: 25 May 2017
 		- It would be nice to be able to have this in `/var/mail/<username>/`, but I didn't find an easy solution to that.
 - Set up dovecot to look in that folder (installed via brew)
 	- /usr/local/etc/dovecot/local.conf: `mail_location = maildir:/Users/%u/Maildir`
+	- startup: `sudo brew services start dovecot`
 	- Some commands: `dovecot`, `dovecot reload`, `dovecot stop`
 - Resources
     - Helpful (to a point): <https://xdeb.org/node/1607>
