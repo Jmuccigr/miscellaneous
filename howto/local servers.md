@@ -25,7 +25,7 @@ date: 25 May 2017
 - Set up dovecot to look in that folder (installed via brew)
 	- /usr/local/etc/dovecot/local.conf: `mail_location = maildir:/Users/%u/Maildir`
 	- startup: `sudo brew services start dovecot`
-	- Some commands: `dovecot`, `dovecot reload`, `dovecot stop`
+	- Some commands (but use brew): `dovecot`, `dovecot reload`, `dovecot stop`
 - Resources
     - Helpful (to a point): <https://xdeb.org/node/1607>
     - Explained mailbox types: <http://unix.stackexchange.com/questions/132654/how-to-make-postfix-create-maildir>
