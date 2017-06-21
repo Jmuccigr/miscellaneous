@@ -31,4 +31,4 @@ Rather than using one of the packages to handle scanned documents, it can be don
     1. `tesseract` can also do this itself, though it's currently converting pgm to jpeg, so
         - Convert to png first (converting dpi if needed): `convert -units PixelsPerInch input.pgm -density 150 output.png`
         - `ls *.png | xargs -I {} tesseract {} {} pdf`
-        - Use `pdfunite` to combine resultant files into single pdf
+1. Use `pdfunite` to combine resultant files into single pdf
