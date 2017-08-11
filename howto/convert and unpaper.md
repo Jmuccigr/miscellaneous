@@ -9,6 +9,7 @@ date: 3 May 2017
 Rather than using one of the packages to handle scanned documents, it can be done in pieces (which could be scripted together, of course)
 
 1. Convert the PDF to images
+    - `pdfimages`
     - `convert`
         -  Use the convert_pdf.sh script to maintain correct dpi.
         -  Use `-depth 8` to create pgm that unpaper can read.
