@@ -11,9 +11,9 @@ author: John D. Muccigrosso
 `magick input_image.png \( +clone -blur 0x8 -threshold 90% -trim -set option:trim_size "%wx%h%X%Y" +delete \) -crop %[trim_size] -resize x800 show:`
 - Peel off a 1-pixel wide strip of the west side image  
 `magick input_image.png -crop +%[fx:1-w]+0  +repage show:`
-- Get max color values for an image  
+- Get max color value for an image  
 `magick input_image.png -verbose info: | grep max:  | sed 's/[^0-9]/ /g' | perl -pe 's/^\s+//g' | perl -pe 's/\s.*$//'`
-- Get max color values for an image much faster:  
+- Get max color value for an image much faster:  
 `convert input_image.png - | identify -precision 5 -define identify:locate=maximum -define identify:limit=1 | set -- | echo $2`
 
 Process:
