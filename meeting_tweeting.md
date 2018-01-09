@@ -1,12 +1,12 @@
 # Recommendations for tweeting the meeting
 
 - Always, always, always use the meeting hashtag *#aiascs*
-- When tweeting about or from a session, use the session identifier as another hashtag, e.g., *#sC7*
+- When tweeting about or from a session, use the session identifier as another hashtag with a leading *s*, e.g., *#sC7*
 - If you're a session moderator:
-    1. Ask the presenters if they are OK with people tweeting images of their slides
-    1. Remind the audience about the hashtags and let them know about the presenters' preferences regarding pictures.
+    1. Ask the presenters if they are OK with people tweeting their talk and images of their slides
+    1. Remind the audience about the hashtags and let them know about the presenters' preferences regarding tweeting and images.
 - If you're a presenter, provide the audience with your Twitter handle right at the top so that they can include it in tweets for full attribution. Encourage tweeting!
-- If you're a tweeter, be as concise (280 characters!) and accurate as possible, and don't forget attribution.
+- If you're a tweeter, respect the presenter's preferences. In your tweets be as concise (280 characters!) and accurate as possible, and don't forget attribution.
 
 For more, see the excellent (and short) piece on the SCS blog:
 
