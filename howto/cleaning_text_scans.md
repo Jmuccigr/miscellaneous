@@ -23,7 +23,7 @@ convert input.img \( +clone -canny 0x1+10%+30% -morphology Close:3 Disk:3.5 \) -
 1. Use blur to create a cleaner version of the image
 1. Use level to get rid of the light grays from the background and grab some of the darker grays
 1. Use morphology to expand the black areas.
-1. Use comositing to divide the original by the new image
+1. Use compositing to divide the original by the new image
 
 ```
 convert input.img \( +clone -blur 3 -level 10%,75% -negate -morphology dilate disk:3.5 \) -compose divide_src -composite output.img
