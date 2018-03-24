@@ -5,6 +5,7 @@ date: 25 May 2017
 
 - npm
     - mermaid
+    - jQuery
 - rbenv (itself installed homebrew)
 	- ruby
 - manually
@@ -12,4 +13,5 @@ date: 25 May 2017
 		- Required
 			- pdfunite from poppler (installed via homebrew)
 			- txt2man (via homebrew)
+	- [Leaflet](http://leafletjs.com/download.html) (into the temples GitHub folder)
 

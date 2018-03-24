@@ -14,3 +14,11 @@ Tesseract's makebox option will process an image, outputting one line per charac
 
 1. Get letter heights  
   ```echo `expr ${a[4]} - ${a[2]}` ```
+
+1. Read heights into an array.
+
+1. Sort the array.
+
+1. Grab middle value of array.
+
+1. Scale image by enough to make median letter height at least 20 px.
