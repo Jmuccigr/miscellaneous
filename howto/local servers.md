@@ -5,8 +5,16 @@ date: 25 May 2017
 
 ## MAMP, Apache, & php
 
-- [Use files without php extension](http://wettone.com/code/clean-urls) (= clean URIs) via Apache's `mod_rewrite`
-	1. Add regex rewrite rules according to link above.
+- [Use files without php extension](http://wettone.com/code/clean-urls) (= clean URIs) via Apache's `mod_rewrite` in `.htaccess`:
+	1. Add regex rewrite rules according to link above:  
+  
+    	```
+    	RewriteEngine On  
+    	Options FollowSymLinks  
+    	RewriteRule "^([a-z0-9_\-]+)$" "$1.php" [L]  
+    	RewriteRule "^([a-z]+)/([a-z\-]+)$" "$1/$2.php" [L]  
+    	```
+    	
 	1. Make sure that in /Applications/MAMP/conf/apache/httpd.conf, find:
 	
 		```
@@ -30,5 +38,5 @@ date: 25 May 2017
     - Helpful (to a point): <https://xdeb.org/node/1607>
     - Explained mailbox types: <http://unix.stackexchange.com/questions/132654/how-to-make-postfix-create-maildir>
     - Check console for errors
-        - If already running on certain PID and exits "with abnormal code 89", master.pid file may have wrong permissions so it can't be refreshed. Kill the service at `/usr/local/var/run/dovecot/master.pid` 
+        - If already running on certain PID and exits "with abnormal code 89", master.pid file may have wrong permissions so it can't be refreshed. Kill the service with the ID listed in `/usr/local/var/run/dovecot/master.pid` 
             - This often happens after upgrade.
