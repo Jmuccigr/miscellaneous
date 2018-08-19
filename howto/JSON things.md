@@ -15,6 +15,8 @@ date: 25 May 2017
 
 - npm
 	- geojsonhint [validates]; `geojsonhint < file.geojson`
+	- csv2geojson; `csv2geojson file.csv`
+    	- Conveniently invalid lines come as errors so output is clean
 
 - brew
 	- jq; [tutorial](http://programminghistorian.github.io/ph-submissions/lessons/json-and-jq.html)
