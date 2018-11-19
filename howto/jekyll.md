@@ -24,3 +24,8 @@ date: 9 June 2017
     - Make sure all .md files have a YAML header or jekyll won't generate html from them.
     - [gems supported by github](https://pages.github.com/versions/)
     - If there are layout templates, makes sure that they include the necessary header material (e.g., css) for the them.
+- Updating
+    - [Useful](https://jekyllrb.com/docs/upgrading/)
+    - Update Jekyll with `bundle update jekyll`
+    - Better: update all the gems with `bundle update`. [NB](https://bundler.io/v1.7/rationale.html#checking-your-code-into-version-control) "This will resolve dependencies from scratch, ignoring the Gemfile.lock."
+    - Gemfile and Gemfile.lock may limit the version the update will go to. I've been matching the version of Jekyll that GitHub uses.

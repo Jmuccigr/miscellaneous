@@ -18,3 +18,6 @@ date: 25 May 2017
 	- npm update -g <pkg>
 - gem
 	- gem update
+- jekyll
+    - bundle update jekyll
+        - this will observe the rules in the Gemfile and Gemfile.lock
