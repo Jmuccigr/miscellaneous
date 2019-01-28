@@ -23,8 +23,16 @@ date: 25 May 2017
 		    AllowOverride ~None~ All
 		</Directory>
 		```
+
 - Change log to usual place, which will show up in console.app
 	- `ErrorLog "/Users/john_muccigrosso/Library/Logs/apache_error.log"`
+
+- Icons
+    - MAMP will use its own /icons directory unless the following line is commented out in the http.conf file:
+
+        ```
+        #       Alias /icons/ "/Applications/MAMP/Library/icons/"
+        ```
 
 ## Mail
 - Set up postfix to use maildir system (1 file per message)
