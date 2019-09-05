@@ -45,6 +45,6 @@ date: 25 May 2017
 - Resources
     - Helpful (to a point): <https://xdeb.org/node/1607>
     - Explained mailbox types: <http://unix.stackexchange.com/questions/132654/how-to-make-postfix-create-maildir>
-    - Check console for errors
-        - If already running on certain PID and exits "with abnormal code 89", master.pid file may have wrong permissions so it can't be refreshed. Kill the service with the ID listed in `/usr/local/var/run/dovecot/master.pid` 
+    - Check Console for errors
+        - system.log: If already running on certain PID and exits "with abnormal code 89", master.pid file may have wrong permissions so it can't be refreshed. Kill the service with the ID listed in `/usr/local/var/run/dovecot/master.pid` 
             - This often happens after upgrade.
