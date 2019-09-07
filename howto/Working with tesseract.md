@@ -5,7 +5,7 @@ author: John D. Muccigrosso
 
 - When tesseract is updated (via homebrew), make sure to
     1. Update the `TESSDATA_PREFIX` env variable to be the directory that **contains** the `tessdata` directory. A new version number will break this.
-    1. Symlink all the files from the github install of the `tessdata` repo into the tessdata directory inside the homebrew tesseract install.
+    1. Symlink all the files from the github install of the `tessdata` repo into the tessdata directory inside the homebrew tesseract install: `ln -s -i Documents/github/local/tessdata/*.traineddata $TESSDATA_PREFIX`
 - To install version 3 instead of 4 ([This](https://danepowell.com/blog/homebrew-formula-versions) was helpful.):
         - Unlink the newer version, if installed: `brew unlink tesseract`
         - Find the commit and its raw link and install it directly: `brew install https://github.com/Homebrew/homebrew-core/raw/5df6eb919506a097b2efb1df34a16e3a147c8731/Formula/tesseract.rb`
