@@ -12,12 +12,13 @@ date: 25 May 2017
 - pipUp
     - aliased command in .bash_profile
 - npm 
-	- npm -v
-	- npm install -g npm [installs globally]
-	- npm outdated -g
-	- npm update -g <pkg>
+	- `npm -v`
+	- `npm install -g npm` [installs globally]
+	- `npm outdated -g`
+	- `npm update -g <pkg>`
 - gem
-	- gem update
+	- `gem update`
+	- after an update to ruby, do `bundle install` as well
 - jekyll
-    - bundle update jekyll
+    - `bundle update jekyll`
         - this will observe the rules in the Gemfile and Gemfile.lock
