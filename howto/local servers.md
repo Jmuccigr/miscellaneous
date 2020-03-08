@@ -20,7 +20,7 @@ date: 25 May 2017
 		```
 		<Directory />
 		    Options Indexes FollowSymLinks
-		    AllowOverride ~None~ All
+		    AllowOverride ~~None~~ All
 		</Directory>
 		```
 
@@ -33,11 +33,13 @@ date: 25 May 2017
         ```
         #       Alias /icons/ "/Applications/MAMP/Library/icons/"
         ```
+    1. Upgrades to WordPress may wipe out the rewrite rules on the server.
 
 ## Mail
 - Set up postfix to use maildir system (1 file per message)
 	- /etc/postfix/main.cf: `home_mailbox = Maildir/`
 		- It would be nice to be able to have this in `/var/mail/<username>/`, but I didn't find an easy solution to that.
+		- This can get overwritten by system updates.
 - Set up dovecot to look in that folder (installed via brew)
 	- /usr/local/etc/dovecot/local.conf: `mail_location = maildir:/Users/%u/Maildir`
 	- startup: `sudo brew services start dovecot`
