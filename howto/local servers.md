@@ -35,7 +35,7 @@ date: 25 May 2017
         ```
     1. Upgrades to WordPress may wipe out the rewrite rules on the server.
 
-## Mail
+## Local Mail with Dovecot & postfix
 - Set up postfix to use maildir system (1 file per message)
 	- /etc/postfix/main.cf: `home_mailbox = Maildir/`
 		- It would be nice to be able to have this in `/var/mail/<username>/`, but I didn't find an easy solution to that.
