@@ -3,6 +3,14 @@ title: ImageMagick tips
 author: John D. Muccigrosso
 ---
 
+## Install
+
+Now using third-party formula for homebrew install since options are not allowed on formulae
+
+- `brew install blogabe/xplanet/imagemagick --with-x11 --with-fftw --with-libwmf --with-libheif`
+
+## Handy commands
+
 - Make a label out of text  
 `convert -set option:text_string "hello" -pointsize 36 label:text_string`
 - Blur everything and convert to blob to get bounding box:  
