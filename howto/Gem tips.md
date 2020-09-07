@@ -10,3 +10,4 @@ date: Saturday, 24 March 2018
         `require 'rubygems'`  
         `require 'bundler/setup'`
 
+- For the local Jekyll installation that mimics my personal github.io website, keep it updated by navigating to it at `/Users/john_muccigrosso/Documents/github/local/jmuccigr.github.io` and running `bundle update`.
