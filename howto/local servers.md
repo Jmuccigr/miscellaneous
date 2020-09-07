@@ -35,11 +35,15 @@ date: 25 May 2017
         ```
     1. Upgrades to WordPress may wipe out the rewrite rules on the server.
 
+- Set up MAMP to handle https via instructions [here](https://davescripts.com/set-up-ssl-on-a-virtual-host-on-mamp).
+    - cert password: same as computer login
+    - challenge password: M..........2 (deleted as part of the set-up, I believe)
+
 ## Local Mail with Dovecot & postfix
 - Set up postfix to use maildir system (1 file per message)
 	- /etc/postfix/main.cf: `home_mailbox = Maildir/`
 		- It would be nice to be able to have this in `/var/mail/<username>/`, but I didn't find an easy solution to that.
-		- This can get overwritten by system updates.
+		- This can get overwritten by system updates. Check if local mail isn't showing up in Mail.app.
 - Set up dovecot to look in that folder (installed via brew)
 	- /usr/local/etc/dovecot/local.conf: `mail_location = maildir:/Users/%u/Maildir`
 	- startup: `sudo brew services start dovecot`
