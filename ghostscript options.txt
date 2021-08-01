@@ -1,0 +1,244 @@
+-sDEVICE=pdfwrite
+-dNOPAUSE
+-dSAFER
+-dBATCH
+-dQUIET
+-dCompatibilityLevel=1.5
+-dDownsampleColorImages=true
+-dDownsampleGrayImages=true
+-dDownsampleMonoImages=true
+-sPAPERSIZE=a4
+-dPDFFitPage
+-dDOINTERPOLATE
+-dColorImageDownsampleThreshold=1.0
+-dGrayImageDownsampleThreshold=1.0
+-dMonoImageDownsampleThreshold=1.0
+-dColorImageResolution=<resolution>
+-dGrayImageResolution=<resolution>
+-dMonoImageResolution=<resolution>
+-sOutputFile=<OutFile>
+-dAutoFilterColorImages=false
+-dAutoFilterGrayImages=false
+-dColorImageFilter=/FlateEncode
+-dGrayImageFilter=/FlateEncode
+-dColorConversionStrategy=/LeaveColorUnchanged
+-dEncodeColorImages=false
+-dEncodeGrayImages=false
+-dEncodeMonoImages=false
+
+# gs -sDEVICE=pdfwrite -o /dev/null -c "currentpagedevice { exch ==only ( ) print == } forall"
+
+-dGrayImageDownsampleThreshold 1.5
+-dPDFX false
+-dColorAccuracy 2
+-dFILTERVECTOR false
+-dGrayValues 256
+-dPreserveTrMode true
+-dDocumentUUID ()
+-dAutoPositionEPSFiles true
+-dGrayImageDict -dict-
+-dRenderIntent 8
+-dTransferFunctionInfo /Preserve
+-dPSPageOptions []
+-dFILTERTEXT false
+-dBlueValues 256
+-dPDFA 0
+-dUCRandBGInfo /Preserve
+-dCompressEntireFile false
+-dAutoFilterGrayImages true
+-dCompressFonts true
+-dGrayImageDepth -1
+-dICCOutputColors ()
+-dSubsetFonts true
+-dFILTERIMAGE false
+-dGreenValues 256
+-dPreserveOverprintSettings true
+-dHaveCIDSystem false
+-dPageSize [612.0 792.0]
+-dAutoFilterColorImages true
+-dLeadingEdge null
+-dEncodeMonoImages true
+-dDeviceLinkProfile ()
+-dBandWidth 0
+-dRedValues 256
+-dHaveTransparency true
+-dPreserveOPIComments true
+-dHaveTrueTypes true
+-dASCII85EncodePages false
+-dEncodeGrayImages true
+-dBlendColorProfile ()
+-dHighLevelDevice true
+-dPageDeviceName null
+-dsRGBProfile (None)
+-d.NeverEmbed [/Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique /Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique /Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic /Symbol /ZapfDingbats]
+-dBandHeight 0
+-dSimulateOverprint true
+-dPreserveEPSInfo true
+-dMaxShadingBitmapSize 256000
+-dAntiAliasMonoImages false
+-dEncodeColorImages true
+-dPostRenderProfile ()
+-dPreserveHalftoneInfo false
+-dOutputFile (/dev/null)
+-dBandBufferSpace 0
+-dSeparationColorNames []
+-dNeverEmbed [/Courier /Courier-Bold /Courier-Oblique /Courier-BoldOblique /Helvetica /Helvetica-Bold /Helvetica-Oblique /Helvetica-BoldOblique /Times-Roman /Times-Bold /Times-Italic /Times-BoldItalic /Symbol /ZapfDingbats]
+-dMaxClipPathSize 12000
+-dAntiAliasGrayImages false
+-dEmitDSCWarnings false
+-dProofProfile ()
+-dPreserveCopyPage true
+-d.AlwaysEmbed []
+-dMaxPatternBitmap 0
+-dMaxSeparations 3
+-dGrayACSImageDict -dict-
+-dOutputDevice /pdfwrite
+-dPatternImagemask false
+-dAntiAliasColorImages false
+-dInterpolateControl 1
+-dPageList ()
+-dDownsampleMonoImages false
+-dTextICCProfile ()
+-dBitsPerPixel 24
+-dPDFXBleedBoxToTrimBoxOffset [0.0 0.0 0.0 0.0]
+-dAntidropoutDownscaler false
+-dName (pdfwrite)
+-dEmbedAllFonts true
+-dProduceDSC true
+-dAlwaysEmbed []
+-dNoOutputFonts false
+-dDownsampleGrayImages false
+-dImageICCProfile ()
+-d.LockSafetyParams false
+-dPDFXSetBleedBoxToMediaBox true
+-dGrayImageAutoFilterStrategy /JPEG
+-dGraphicsAlphaBits 1
+-dDoThumbnails false
+-dWantsPageLabels true
+-dNoEncrypt ()
+-dFastWebView false
+-dDownsampleColorImages false
+-dGraphicICCProfile ()
+-dPDFXTrimBoxToMediaBoxOffset [0.0 0.0 0.0 0.0]
+-dConvertCMYKImagesToRGB false
+-dTextAlphaBits 1
+-dCreateJobTicket false
+-dEncryptionR 0
+-dNoT3CCITT false
+-dDetectBlends true
+-dPreBandThreshold false
+-dPolicies -dict-
+-dParseDSCCommentsForDocInfo true
+-dColorImageAutoFilterStrategy /JPEG
+-d.IgnoreNumCopies false
+-dPageUsesTransparency false
+-dPermissions -4
+-dAllowPSRepeatFunctions false
+-dDefaultRenderingIntent /Default
+-dUseFastColor false
+-dParseDSCComments true
+-dPDFStartPage 1
+-dTextKPreserve 8
+-dColorConversionStrategy /LeaveColorUnchanged
+-dHWResolution [720.0 720.0]
+-dKeyLength 0
+-dWantsToUnicode true
+-dMonoImageResolution 300
+-dDetectDuplicateImages true
+-dConvertImagesToIndexed true
+-dGrayDetection false
+-dPageOffset [0 0]
+-dOptimize false
+-dPDFEndPage -1
+-dImageKPreserve 8
+-dColorACSImageDict -dict-
+-dUserPassword ()
+-dHWSize [6120 7920]
+-dPDFACompatibilityPolicy 0
+-dCompressPages true
+-dDeviceGrayToK true
+-dMargins [0.0 0.0]
+-dOffOptimizations 0
+-dCoreDistVersion 5000
+-dGraphicKPreserve 8
+-dIsDistiller true
+-dOwnerPassword ()
+-dMonoImageDownsampleType /Subsample
+-dPreserveDeviceN true
+-dNumCopies null
+-dOutputAttributes -dict-
+-dColorImageFilter /DCTEncode
+-dSeparations false
+-dMonoImageFilter /CCITTFaxEncode
+-dLZWEncodePages false
+-dKPreserve 8
+-dCannotEmbedFontPolicy /Warning
+-dUserUnit 1.0
+-dMaxInlineImageSize 4000
+-dGrayImageResolution 150
+-dPreserveSeparation true
+-dInputAttributes -dict-
+-dColorImageDownsampleThreshold 1.5
+-dMaxBitmap 10000000
+-dMonoImageDownsampleThreshold 1.5
+-dOPM 0
+-dTextBlackPt 8
+-dPrintStatistics false
+-dGrayImageDownsampleType /Subsample
+-dDoNumCopies false
+-dDisablePageHandler false
+-dEndPage {--.callendpage--}
+-dColorImageDict -dict-
+-dBufferSpace 4000000
+-dImagingBBox null
+-dMonoImageDict -dict-
+-dImageBlackPt 8
+-d%MediaSource 0
+-dAutoRotatePages /PageByPage
+-dCompressStreams true
+-dProcessColorModel /DeviceRGB
+-dCompatibilityLevel 1.7
+-dCenterPages false
+-dOutputICCProfile (default_rgb.icc)
+-dColorImageDepth -1
+-dMonoImageDepth -1
+-dGraphicBlackPt 8
+-d%MediaDestination 0
+-dFirstObjectNumber 1
+-dPreserveSMask true
+-dColorImageResolution 150
+-dFitPages false
+-dLastPage 0
+-dBeginPage {--.callbeginpage--}
+-dCalRGBProfile (None)
+-dMaxSubsetPct 100
+-dBlackPtComp 8
+-d.HWMargins [0.0 0.0 0.0 0.0]
+-dUseCIEColor false
+-dReEncodeCharacters true
+-dRotatePages false
+-dFirstPage 0
+-dCalGrayProfile (None)
+-dInstall {--.callinstall--}
+-dTextIntent 8
+-dPassThroughJPEGImages true
+-d.MediaSize [612.0 792.0]
+-dReAssignCharacters true
+-dColorImageDownsampleType /Bicubic
+-dSetPageSize true
+-dColorValues 16777216
+-dCalCMYKProfile (None)
+-dPageCount 0
+-dImageMemory 524288
+-dImageIntent 8
+-dAllowIncrementalCFF false
+-dUsePrologue false
+-dForOPDFRead false
+-dDocumentTimeSeq 0
+-dColors 3
+-dGrayImageFilter /DCTEncode
+-dGraphicIntent 8
+-dUseFlateCompression true
+-dNoInterpolateImagemasks true
+-dInstanceUUID ()
+-dBinding /Left
