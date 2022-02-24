@@ -24,7 +24,7 @@ suppress-bibliography: true
 
 ### Peter Drucker
 
-#### [-@Drucker1999] 
+#### [-@Drucker1999]
 <!--Management challenges for the 21st century-->
 
 - Management exists for the sake of the institution's results. It has to start with the intended results and has to organize the resources of the institution to attain these results. It is the organ to make the institution, whether business, church, university, hospital or a battered women's shelter; capable of producing results outside itself. - p. 39
@@ -55,3 +55,7 @@ What is the principle? That, too, is well-known-at least as a general propositio
 <!--Altmetrics, web-native scholarship, and the decoupled journal: Get ready for the second revolution-->
 
 - Online journals are paper journals delivered by faster horses.
+
+### Northrop Frye [-@Frye1963]
+
+- The poet’s job is not to tell you what happened, but what happens - p. 99
