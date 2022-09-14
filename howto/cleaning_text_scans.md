@@ -10,7 +10,7 @@ author: John D. Muccigrosso
 1. Use compositing to divide the original by the new image
 
 ```
-convert input.img \( +clone -canny 0x1+10%+30% -morphology Close:3 Disk:3.5 \) -compose Divide_Src -composite output.img
+magick input.img \( +clone -canny 0x1+10%+30% -morphology Close:3 Disk:3.5 \) -compose Divide_Src -composite output.img
 ```
 
 ### Notes
@@ -26,5 +26,11 @@ convert input.img \( +clone -canny 0x1+10%+30% -morphology Close:3 Disk:3.5 \) -
 1. Use compositing to divide the original by the new image
 
 ```
-convert input.img \( +clone -blur 3 -level 10%,75% -negate -morphology dilate disk:3.5 \) -compose divide_src -composite output.img
+magick input.img \( +clone -blur 3 -level 10%,75% -negate -morphology dilate disk:3.5 \) -compose divide_src -composite output.img
+```
+
+## Another way
+
+```
+magick -define tiff:preserve-compression=true -compose screen "$1" \( "$1" -negate -lat 30x30+10% -negate -threshold 90% \) -composite "$fname".clean."$fext"
 ```
