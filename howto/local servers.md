@@ -54,6 +54,7 @@ date: 25 May 2017
     - Check Console for errors
         - system.log: If already running on certain PID and exits "with abnormal code 89", master.pid file may have wrong permissions so it can't be refreshed. Kill the service with the ID listed in `/usr/local/var/run/dovecot/master.pid` 
             - This often happens after upgrade.
+    - run `sudo dovecot -F` to get errors, if all else fails
 - Set dovecot to delete trashed mail
     - <https://notes.sagredo.eu/en/qmail-notes-185/expunging-expired-junk-and-trash-emails-with-dovecot-124.html>
     - Add this to the 15-maildirs.conf file under `mailbox Trash {`
