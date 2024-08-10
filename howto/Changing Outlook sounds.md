@@ -10,7 +10,7 @@ The sounds for Outlook live in `/Applications/Microsoft Outlook.app/Contents/Fra
 The solution is to copy new .wav format files with the appropriate names to this folder, fixing their permissions just to be sure. For example:
 
 ```
-> sudo cp Dmailsent.wav /Applications/Microsoft\ Outlook.app/Contents/Frameworks/OutlookCore.framework/Resources/mailsent.wav
+> sudo cp Downloads/mailsent.wav /Applications/Microsoft\ Outlook.app/Contents/Frameworks/OutlookCore.framework/Resources/mailsent.wav
 > sudo chmod 664 /Applications/Microsoft\ Outlook.app/Contents/Frameworks/OutlookCore.framework/Resources/mailsent.wav
 ```
 
