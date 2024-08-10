@@ -11,6 +11,8 @@ author: John D. Muccigrosso
     1.  Create database "temples".
     1.  Import temples csv into new table.
     1.  Select table and under "Operations", rename table.
+1.  php.ini
+    1. set `output_buffering` to `Off` (the default) or the Clear button won't result in a map update
 
 ### Uploading to hosting service
 
