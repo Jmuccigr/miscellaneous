@@ -39,6 +39,9 @@ date: 25 May 2017
     - cert password: same as computer login
     - challenge password: M..........2 (deleted as part of the set-up, I believe)
 
+- Set `output_buffering` to `Off` (the default) in php.ini or the `Clear` button won't result in a map update
+
+
 ## Local Mail with Dovecot & postfix
 - Set up postfix to use maildir system (1 file per message)
 	- /etc/postfix/main.cf: `home_mailbox = Maildir/`
