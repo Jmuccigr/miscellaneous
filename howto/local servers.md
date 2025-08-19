@@ -43,12 +43,17 @@ date: 25 May 2017
 
 
 ## Local Mail with Dovecot & postfix
+
 - Set up postfix to use maildir system (1 file per message)
 	- /etc/postfix/main.cf: `home_mailbox = Maildir/`
 		- It would be nice to be able to have this in `/var/mail/<username>/`, but I didn't find an easy solution to that.
 		- This can get overwritten by system updates. Check if local mail isn't showing up in Mail.app.
+- Stop postfix from respawning every 10 seconds (in launchd.log)
+    - /etc/postfix/main.cf: `inet_interfaces = 127.0.0.1`
+    - See <https://serverfault.com/questions/646284/postfix-not-working-on-macos-yosemite>
 - Set up dovecot to look in that folder (installed via brew)
 	- /usr/local/etc/dovecot/local.conf: `mail_location = maildir:/Users/%u/Maildir`
+	- /opt/homebrew/etc/dovecot/local.conf in the new version 2.4
 	- startup: `sudo brew services start dovecot`
 	- Some commands (but use brew): `dovecot`, `dovecot reload`, `dovecot stop`
 - Resources
