@@ -28,6 +28,14 @@ date: Monday, 10 March 2025
         - `source ~/.<old dir>/bin/activate`
         - `pip install -r requirements.txt`
 
+## Pillow
+
+- display(image): shows image in-line in Jupyter
+- image.show(): opens image in Preview
+- load image from an array (first arg is mode: 'RGB', 'RGBA', 'L'):
+    - `imgarray = np.array(img).astype(np.uint8)
+       pimg = Image.frombuffer('L', dims, imgarray)`
+
 ## Tips
 
 - get result of system call:
